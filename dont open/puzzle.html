@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>puzzle</title>
+    <style>
+        body {
+            background: url('5.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: rgba(161, 128, 78, 0.925);
+            box-shadow: 10 10 20px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+            border-radius: 12px;;
+        }
+    </style>
+</head>
+    <body>
+        <div class="container">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" placeholder="Enter">
+            <input type="checkbox" id="showPassword" onchange="togglePasswordVisibility()"> Show
+            <button onclick="checkPassword()">Submit</button>
+            <div id="result" style="display: none;">
+                <a href="https://drive.google.com/file/d/1SX9tYpnEIXylASmT_jnk8EEdVaNPPHmE/view?usp=drivesdk" id="link">GENIOUUUUUUUUUS</a>
+            </div>
+        </div>
+        <div id="popup">
+            <p id="popupMessage"></p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+        
+        <script>
+            function togglePasswordVisibility() {
+                var passwordInput = document.getElementById("password");
+                var showPasswordCheckbox = document.getElementById("showPassword");
+        
+                if (showPasswordCheckbox.checked) {
+                    passwordInput.type = "text";
+                } else {
+                    passwordInput.type = "password";
+                }
+            }
+        
+            function showPopup(message) {
+                var popup = document.getElementById("popup");
+                var popupMessage = document.getElementById("popupMessage");
+        
+                popupMessage.textContent = message;
+                popup.style.display = "block";
+            }
+        
+            function closePopup() {
+                var popup = document.getElementById("popup");
+                popup.style.display = "none";
+            }
+            function reorder () {
+
+
+
+            }
+            function randomAlert() {
+                var messages = ["hmar", "GHALET", "bruh", "bruh kon nmdha l nsra y3rfha :)", "m3rftihach :)?", "rohi tkhbchi khirlk", "3ndk bac tnsaych", "hmar kon ja bnadem", "3mo google kayen", "hta b google m3rftihach :)?"];
+                var randomIndex = Math.floor(Math.random() * messages.length);
+                showPopup(messages[randomIndex]);
+            }
+        
+            function checkPassword() {
+                var password = document.getElementById("password").value;
+                var resultDiv = document.getElementById("result");
+                var link = document.getElementById("link"); 
+            
+                
+                var validPasswords = ["dearest o smile friend", "3ndi bac"];
+                var reorder = ["smile o dearest friend"];
+                /*myth of sisyphus 1942*/
+                /*inferno 1314*/
+                /*earthly paradise 1868*/ 
+                /*metamorphosis 8ce*/
+                                
+                if (validPasswords.includes(password)) {
+                    resultDiv.style.display = "block";
+                    link.style.display = "block"; 
+                } else if (reorder.includes(password)) {
+                    resultDiv.style.display = "block";
+                    link.style.display = "none";
+                    showPopup("so close :), reorder it");
+                } else {
+                    resultDiv.style.display = "block";
+                    link.style.display = "none";
+                    randomAlert();
+                }
+            }
+        </script>
+</body>
+
+<body>
+    <div class="rules">
+       rules:
+    </div>
+    <div class="rulesxp">
+       <p>  - it's pretty simple</p>
+       <p>  - you have quotes from different books with missing words</p>
+       <p>  - use google wla cha bghiti to find these words then order them</p>
+       <p>  - mba3d typi sentence li khrjtlk lfoug </p>
+       <p>  - i gave you l position te3 hdek l word f book (mch name te3 l book), use it!</p>
+       <p>  - p.s l order is a part of the puzzle mch ratib el kalimat li tata7asala 3la l jomlati sa7i7a</p>
+       <p>  - it's related to the book itself</p>
+       <p>  - bruh ik m3ndkch lw9t bah tsolviha, so ida hkmatk curiosity 3la wch kayen mba3d type "3ndi bac" f password box <br>  b3d l bac solviha b39lk </p>
+       
+    </div>
+    <div class="rules">
+        puzzle:
+    </div>
+    <p class="friend">“There are many causes for a suicide, and generally the most obvious ones were not the most powerful. Rarely is suicide committed (yet the hypothesis is not excluded) through reflection.
+        What sets off the crisis is almost always unverifiable. Newspapers often speak of “personal sorrows” or of “incurable illness.” These explanations are plausible. But one would have to know whether a "........" of the desperate man had not that very day addressed him indifferently. He is the guilty one. For that is enough to precipitate all the rancors and all the boredom still in suspension.”
+        </p>
+        <p class="source"> - An Absurd Reasoning_Absurdity and          
+            Suicide. </p>
+     <p class="friend">"Now was the day departing¹, and the air, Im brown'd with shadows, from their toils released All animals on earth; and I alone Prepared myself the conflict to sustain, Both of sad pity, and that perilous road, Which my unerring memory shall retrace.
+
+        O Muses! "....." high genius! now vouchsafe Your aid. O mind! that all I saw hast kept Safe in a written record, here thy worth And eminent endowments come to proof.
+         </p>
+    <p class="source"> -page 7 Hell canto II</p>
+
+    <p class="friend">“Once while Galatea let Scylla comb her hair, she addressed these words to her, sighing often: ‘At least, O virgin Scylla, you are not wooed by a relentless breed of men: and you can reject them without fear, as you do. But I, whose father is Nereus, and whose mother is sea-green Doris, I, though protected by a crowd of sisters, was not allowed to flee the love of Polyphemus, the Cyclops, except through sorrow’, and tears stopped the sound of her voice. When the girl had wiped away the tears with her white fingers, and the goddess was comforted, she said: ‘Tell me, O ".........." one: do not hide the cause of your sadness (I can be so trusted)’ The Nereid answered Crateis’s daughter in these words: Acis was the son of Faunus and the nymph Symaethis....”</p>
+    <p class="source">-BK XIII: 738-788 Acis and Galatea </p>
+    <p class="friend">"A little while I sighed to find him gone, A little while the dawning was alone, And the light gathered; then I held my breath, And shuddered at the sight of Eld and Death. 
+        Alas! Love passed me in the twilight dun, His music hushed the wakening ousel’s song; 
+        But on these twain shone out the golden sun, And o’er their heads the brown bird’s tune was strong, As shivering, twixt the trees they stole along; 
+        None noted aught their noiseless passing by, The world had quite forgotten it must die. 
+        NOW must these men be glad a little while That they had lived to see May once more "........" </p>
+    <p class="source"> - page 296 May: The story of Cupid and Psyche </p>
+</body>
+</html>
